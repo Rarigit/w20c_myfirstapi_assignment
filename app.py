@@ -31,8 +31,6 @@ def make_animals():
     result = run_statement("CALL make_animals(?,?,?)", [animals_name, animals_class, animals_diet])
     if result == None:
         return "Success"
-    elif "Incorrect date value" in result:
-        return "The date was invalid, please try again. Format yyyy-mm-dd"
     else:
         return "Something went terribly wrong"
 
@@ -60,6 +58,6 @@ def delete_animals():
     if result == None:
         return "Success"
     else:
-        return "Unable to delete author"
+        return "Unable to delete animal"
 
 app.run(debug = True)
