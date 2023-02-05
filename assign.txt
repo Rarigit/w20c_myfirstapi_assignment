@@ -1,0 +1,31 @@
+We can now make our own (very basic) APIs! We are getting close to being able to actually call ourselves full-stack developers! 
+Let's make a simple API that covers the basic GET, DELETE, PATCH and POST requests.
+
+ 
+
+Setup a GitHub repository and local git repository to track work being done.
+Create a python script that achieves the following:
+Creates an API with the following 1 endpoint "animals" that supports the following HTTP request types:
+GET
+Will return a list of animals (random ones made up) in JSON data
+POST
+Will add an animal to the list of animals and return a success message in text data
+This can just be a "hard coded" animal (like a snake every time)
+PATCH
+Will edit an existing animal in the list of animals and return  a success message in text data
+This can just be a "hard coded" animal (like an owl turning into a snowy owl every time)
+DELETE
+Will delete an animal from the list and return a success message in text data
+This can just be a "hard coded" animal (like a mouse every time)
+These endpoints do not need to take data from the client!
+Add, commit and push your code.
+ 
+
+BONUS:
+
+Allow users to send data to the server for the POST request
+Your server will need to read the animal sent by the user in JSON form and add this specific animal
+to the list (https://stackoverflow.com/questions/39008071/send-post-data-via-raw-json-with-postman Links to an external site.)
+Use a DB instead of a hardcoded list of animals. 
+Create a DB and store some animals in the DB. Collect these animals for the GET request, 
+add an animal on the POST request, edit the animal on a PATCH request and delete an animal on a DELETE request.
